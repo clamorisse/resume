@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{3cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Berenice} % Your first name
+\familyname{Venegas Cotero} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Resume}
+%\address {}{Philadelphia, PA}
+\mobile{(267) 584 8564}
+\email{berenice@cotero.org}
+\homepage{blog.cotero.org}{blog.cotero.org} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\homepage{https://github.com/clamorisse}{github: clamorisse}
+\extrainfo{github: clamorisse}
+\quote{DevOps Engineer - AWS Developer Associate certified\newline
+Interested in building distributed system in the cloud, reliable, scalable and fully automated.\newline
+Eager to work on a challenging project}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Cloud}{AWS: Networking, Security, DB, ECS, Autoscaling, ELB  }
+\cvitem{DevOps}{CloudFormation, Terraform, Consul, Docker, }
+\cvitem{Automation}{Atlas, Vault, Rspec/Serverspec, TestKitchen, Chef, unit testing}
+\cvitem{CI/CD}{Git, CircleCI, Jenkins}
+\cvitem{Scripting}{\textsc{bash}, \textsc{python}, \textsc{ruby}}
+\cvitem{Other}{Ansible, \textsc{C++}, \textsc{Javascript}, \textsc{R}}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+%\subsection{Vocational}
+
+\cventry{2015--Present}{AWS consultant}{}{Philadelphia}{}{Created reliable, scalable and fully automated AWS infrastructure as code using Terraform. Special attention to following best practices.{}
+\begin{itemize}
+\item HPC cluster to run on demand {\textsc{CHARM}} simulations in AWS. 
+\item Migration of WebSites to AWS: WordPress and Hugo.
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2011--2015}{Data Scientist}{\textsc{Temple University}}{Philadelphia}{}{
+\begin{itemize}
+\item  Applied multivariate analysis and statistical inference to correlate lipid profile samples with pathologies.
+\item Applied Bayesian statistics in proteomic and lipidomic profiles to find patterns that would predict anomalies associated with pathologies.
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2009--2011}{Associate Scientist}{\textsc{Temple University School of Medicine}}{Philadelphia}{}{
+\begin{itemize}
+\item Produced liposomal nano-particle that efficiently controlled drug leakage.
+\item Manipulated surface characteristics of nano-particle.
+\item Developed a simulations in R to predict surface distribution and diffusion of lipids.
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2006--2009}{Associate Scientist}{\textsc{Temple University College of Engineering}}{Philadelphia}{}{
+\begin{itemize}
+\item Produced a targeted delivered liposomal nano-particle for mammary cancer tumors.
+\item Performed pharmacological analysis to calculate circulation and particle retention times.
+\item Created a custom image analysis to transform 2D fluorescence images of tumors into the 3D tumor/organ fluoresce source to determine actual dye concentration.
+\end{itemize}}
+
+%------------------------------------------------
+
+\subsection{Postdoctoral Residences}
+
+\cventry{2003--2006}{Lipid lateral distribution in model membranes}{\textsc{Temple University School of Medicine}}{Philadelphia}{}{
+\begin{itemize}
+\item Established a standardized method to detect regularly distributed lipids in model membranes.
+\item Characterized the critical factors that will affect their detection. 
+\item Utilized custom algorithms to performed statistical data analysis.
+\item Developed a Monte Carlo simulation in C++ to validate the experimental results.
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2003}{Improve patch-clamp infrastructure}{\textsc{Temple University School of Medicine}}{Philadelphia}{}
+{\begin{itemize}
+\item Implemented a brand new setting to cut costs and enhance efficiency of a patch-clamp circuitry. The goal was to reduce the noise level and be able to detect changes of 2pAmpers accurately.
+\end{itemize}}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{1997--2003}{Ph.D. Biophysics}{Universidad Autónoma del Estado de Morelos}{Mexico}{Awarded with Honors} {
+\begin{itemize}
+\item Recorded single channel of antimycotic AmB using patch-clamp electrophysiology.
+\item Determined the conditions for maximal appearance of AmB channels.
+\item Developed an algorithms and coded in C++ to find the different levels of currents and open time intervals of the channels. 
+\item Describe the function of AmB channels as function of membrane properties using statistical analysis.
+\end{itemize}}
+
+\cventry{1991--1997}{Physics--Astronomy}{Universidad Autónoma de Baja California}{Mexico}{}{
+\begin{itemize}
+\item Awarded the "Early start in research fellowship" for the project: Dynamical simulations to determine the trajectory memory length in n-body interactions.
+\item Performed numerical simulations in C++.
+\end{itemize}}
+
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards and Certifications}
+
+\cvitem{2016}{Diversity Fellowship -- DockerCon}
+\cvitem{2016}{AWS -- Developer Associate}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Presentations}
+
+\cventry{1998-present}{Presenter}{Physics and Biophysics}{}{}{National and International Meetings}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Spanish}{Mothertongue}{}
+\cvitemwithcomment{English}{Proficient}{}
+\cvitemwithcomment{Portuguese}{Intermediate}{}
+\cvitemwithcomment{French}{Basic}{}
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
